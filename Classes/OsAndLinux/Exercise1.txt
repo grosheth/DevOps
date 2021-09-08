@@ -1,0 +1,11 @@
+EXERCISE 1: Linux Mint Virtual Machine
+
+- Distibution = Mint < Ubuntu < Debian
+- Package Manager = apt
+- CLI = nano, Vi
+- software center/software manager= Software manager
+- Shell = bash
+
+
+EXERCISE 2: Bash Script - Install Java
+
