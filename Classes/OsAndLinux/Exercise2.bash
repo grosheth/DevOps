@@ -1,4 +1,9 @@
 #!/bin/bash
 
-echo "Hello World"
+who="World"
 
+echo "Hello, $who!"
+
+apt update
+
+apt install default-jre
