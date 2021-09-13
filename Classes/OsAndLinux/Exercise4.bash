@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Classer les resultats par ordre de consommation de cpu
+#Classer les resultats par ordre de consommation de Memoire
 
 user=alex
 
