@@ -7,7 +7,7 @@ echo "Mises a jour terminee"
 sleep 5
 
 #Installer les prérequis
-apt-get install apt-transport-https ca-certificates curl gnupg lsb-release grep
+apt-get install apt-transport-https ca-certificates curl gnupg lsb-release grep software-properties-common
 echo "Prerequis installer"
 sleep 5
 
@@ -25,6 +25,7 @@ apt-get update
 sleep 5
 apt-get install docker-ce docker-ce-cli containerd.io
 echo "Docker Installed"
+docker --version
 sleep 5
 
 # Preparer Docker
@@ -48,5 +49,6 @@ read -p $'Appuyer sur "c" pour continuer\n' key
 if [ "$key" = 'c' ]; then
 docker run --name etherpad -e 'DB_TYPE=postgres' -e DB_HOST=$ip -e 'DB_PORT=5432' -e 'DB_NAME=postgres' -e 'DB_USER=etherpad_u' -e 'DB_PASS=Etherpad123' -e 'ADMIN_PASSWORD=admin' -e 'PAD_OPTIONS_CHAT_AND_USERS=true' -e 'SKIN_VARIANTS=dark-toolbar super-dark-background dark-editor' -p 8080:9001 etherpad/etherpad
 fi
+
 
 
