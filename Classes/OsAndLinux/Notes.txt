@@ -7,5 +7,9 @@ EXERCISE 1: Linux Mint Virtual Machine
 - Shell = bash
 
 
-EXERCISE 2: Bash Script - Install Java
+Notes
+
+
+
+
 
