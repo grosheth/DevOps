@@ -35,7 +35,6 @@ systemctl enable docker
 systemctl restart docker
 
 # Lancer un Container Docker Postgresql
-
 docker pull postgres:latest
 docker run --name postgres --detach --volume pg_data:/var/lib/postgresql/data -e POSTGRES_PASSWORD=Admin123 -e POSTGRES_USER=postgres -e TZ=America/Toronto -e PGTZ=America/Toronto --publish 5432:5432 postgres
 docker inspect postgres | grep '"IPAddress"'
