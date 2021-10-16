@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+<style>
+</style>
+
+<body>
+    <center><h1>Des Ptits jeux</h1></center>
+
+    <center><p>Yen a plein plein plein</p></center>
+
+    <center><a href="{{ url_for('Jeux1') }}">Jeu des nombres</a> </center>
+
+    <center><a href="{{ url_for('Jeux2') }}">Roche, papier, sciseaux</a> </center>
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        function jeux1(){
+            $.ajax({
+                url: "GuessNumber.py"
+            })
+        }
+        function jeux2(){
+            $.ajax({
+                url: "RockPaperScissor.py"
+            })
+        }
+    </script>
+
+
+<div class="">
+
+
+</div>
+
+</body>
+</html>
