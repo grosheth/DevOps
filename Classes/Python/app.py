@@ -18,3 +18,13 @@ def Jeux2():
 
 if __name__ == "__main__":
     app.run(debug=True,port=5001)
+
+#@app.route('/GuessNumber')
+#def Jeux1():
+#    file = open(r'/home/alex/Python/GuessNumber.py' , 'r').read()
+#   return exec(file)
+
+#@app.route('/RockPaperScissor')
+#def Jeux2():
+#    file1 = open(r'/home/alex/Python/RockPaperScissor.py' , 'r').read()
+#    return exec(file1)
