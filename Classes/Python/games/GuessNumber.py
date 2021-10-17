@@ -1,6 +1,6 @@
 # Random library 
 
-import random
+import random , os
 
 # Creer le nombre et faire le premier essaie
 def main():

@@ -20,5 +20,5 @@ def win(player, opponent):
         return True
 
 
-if __name__ == '__RockPaperScissor__':
+if __name__ == '__main__':
     print(play())
